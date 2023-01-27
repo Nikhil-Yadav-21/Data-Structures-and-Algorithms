@@ -14,7 +14,7 @@ public class Array {
 	}
 
 	Array(int size) {
-		array = new int[size];
+		this.array = new int[size];
 	}
 
 	// Adds element at last index
