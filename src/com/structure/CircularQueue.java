@@ -38,11 +38,12 @@ public class CircularQueue {
 			rear = rear + 1;
 
 			queue[rear] = element;
-			rear++;
+//			rear++;
 
 		} else {
-			queue[rear] = element;
 			rear = (rear + 1) % size;
+			queue[rear] = element;
+			
 		}
 	}
 
@@ -64,7 +65,7 @@ public class CircularQueue {
 	}
 
 	public void display() {
-		for (int i = front; i < rear; i++) {
+		for (int i = front; i <= rear; i++) {
 			System.out.println(queue[i]);
 		}
 	}
