@@ -14,7 +14,7 @@ public class Array {
 	}
 
 	Array(int size) {
-		this.array = new int[size];
+		Array.array = new int[size];
 	}
 
 	// Adds element at last index
@@ -98,6 +98,14 @@ public class Array {
 		}
 
 		return false;
+	}
+	
+	public void search(int x) {
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] == x) {
+				System.out.println(x + " is at index: " + i);
+			}
+		}
 	}
 
 	public int max() {
