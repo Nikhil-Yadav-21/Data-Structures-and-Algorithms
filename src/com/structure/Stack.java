@@ -4,8 +4,9 @@ package com.structure;
 public class Stack {
 	private int stack[];
 	private int size;
+
 	private int top = -1;
-	static final int DEFAULT_SIZE = 4;
+	static final int DEFAULT_SIZE = 5;
 
 	public Stack() {
 		this(DEFAULT_SIZE);

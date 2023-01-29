@@ -16,6 +16,14 @@ public class Array {
 	Array(int size) {
 		Array.array = new int[size];
 	}
+	
+	enum Type{
+		
+		DYNAMIC,
+		STATIC;
+	}
+	
+	Type type = Type.DYNAMIC;
 
 	// Adds element at last index
 	public void add(int element) {
@@ -31,7 +39,7 @@ public class Array {
 		size++;
 
 	}
-	
+
 	public String toString() {
 		String strArray = Arrays.toString(array);
 		return strArray;
@@ -75,10 +83,10 @@ public class Array {
 			}
 		}
 	}
-	
+
 	public void clear() {
 		for (int i = 0; i < array.length; i++) {
-			
+
 		}
 	}
 
@@ -99,7 +107,7 @@ public class Array {
 
 		return false;
 	}
-	
+
 	public void search(int x) {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i] == x) {
@@ -136,9 +144,7 @@ public class Array {
 			System.out.println(array[i]);
 		}
 		return null;
-		
-		
-		
+
 	}
 
 }
