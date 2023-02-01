@@ -83,10 +83,15 @@ public class Array {
 			}
 		}
 	}
+	
+	public int[] removeAll(int[] arr, int element) {
+		return arr;
+	
+	}
 
 	public void clear() {
 		for (int i = 0; i < array.length; i++) {
-
+			
 		}
 	}
 
@@ -138,7 +143,21 @@ public class Array {
 		return minValue;
 
 	}
-
+	
+	public void even() throws Exception {
+		int count = 0;
+		for (int i = 0; i <array.length; i++) {
+			if (array[i]%2 == 0) {
+				count = count + 1;
+			}
+			else {
+				if (count == 0) {
+					throw new Exception("There are no even numbers");
+				}
+			}
+		}
+	}
+	
 	public String print() {
 		for (int i = 0; i < size; i++) {
 			System.out.println(array[i]);
