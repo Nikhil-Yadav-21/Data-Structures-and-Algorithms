@@ -74,9 +74,6 @@ class LinkedList{
 		tail.link = node;
 		tail = node;
 		size = size + 1;
-				
-				
-		
 		
 	}
 	
