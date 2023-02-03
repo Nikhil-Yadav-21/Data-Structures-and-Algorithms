@@ -1,7 +1,5 @@
 package com.structure;
 
-import java.util.Iterator;
-
 class LinkedList {
 
 	private Node head;
@@ -10,7 +8,8 @@ class LinkedList {
 	private int size;
 
 	public LinkedList() {
-		this.size = size;
+		
+		size = 0;
 	}
 
 	private class Node {
@@ -107,7 +106,7 @@ class LinkedList {
 		return removed;
 
 	}
-	
+
 	public void deleteLast() {
 		Node temp = head;
 		for (int i = 0; i < size - 2; i++) {
@@ -124,6 +123,35 @@ class LinkedList {
 			current = current.link;
 		}
 		System.out.println("NULL");
+	}
+	
+	@SuppressWarnings("unused")
+	private Node getNode(int index) {
+		Node tempNode = head;
+		for (int i = 0; i <= index; i++) {
+			tempNode = tempNode.link;
+		}
+		
+		return tempNode;
+	}
+
+	public int tail() {
+		return tail.data;
+	}
+
+	public int head() {
+		return head.data;
+	}
+	
+	public int countNodes() {
+		Node temp = head;
+		int counter = 0;
+		while (temp != null) {
+			temp = temp.link;
+			counter = counter + 1;
+		}
+		
+		return counter;
 	}
 
 	public int getSize() {
