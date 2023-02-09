@@ -11,6 +11,7 @@ public class Array {
 
 	Array() {
 		this(DEFAULT_SIZE);
+
 	}
 
 	Array(int size) {
